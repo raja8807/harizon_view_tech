@@ -40,11 +40,12 @@ const ToolsTraining = () => {
                 caption="We ensure your team is project-ready with comprehensive hands-on training."
                 variant={1}
                 className={styles.darkHeading}
+                data-aos="fade-up"
             />
             <CustomContainer>
                 <div className={styles.gridWrapper}>
                     {tools.map((tool, index) => (
-                        <div key={index} className={styles.toolCard}>
+                        <div key={index} className={styles.toolCard} data-aos="fade-up" data-aos-delay={index * 150}>
                             <div className={`${styles.iconBox} ${styles[`color${index % 3}`]}`}>
                                 {tool.icon}
                             </div>

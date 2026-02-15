@@ -48,8 +48,8 @@ const ServicesSection = () => {
       <CustomContainer>
         <div className={styles.wrap}>
           <Row>
-            {services.map((ser) => (
-              <Col key={ser.head} xs={12} md={4}>
+            {services.map((ser, index) => (
+              <Col key={ser.head} xs={12} md={4} data-aos="fade-up" data-aos-delay={index * 150}>
                 <div className={styles.item}>
                   <h4>{ser.head}</h4>
 

@@ -33,7 +33,7 @@ const RoleGrowth = () => {
                 <div className={styles.timelineWrapper}>
                     {steps.map((step, index) => (
                         <React.Fragment key={index}>
-                            <div className={styles.stepItem}>
+                            <div className={styles.stepItem} data-aos="fade-up" data-aos-delay={index * 200}>
                                 <div className={styles.iconCircle}>
                                     {step.icon}
                                 </div>
@@ -41,7 +41,7 @@ const RoleGrowth = () => {
                                 <p>{step.desc}</p>
                             </div>
                             {index < steps.length - 1 && (
-                                <div className={styles.connector}>
+                                <div className={styles.connector} data-aos="fade-right" data-aos-delay={index * 200 + 100}>
                                     <ArrowRight />
                                 </div>
                             )}

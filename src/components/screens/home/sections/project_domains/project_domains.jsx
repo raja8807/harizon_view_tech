@@ -34,7 +34,7 @@ const ProjectDomains = () => {
             <CustomContainer>
                 <Row className="justify-content-center">
                     {domains.map((domain, index) => (
-                        <Col key={index} md={6} lg={5} className="mb-4">
+                        <Col key={index} md={6} lg={5} className="mb-4" data-aos="fade-up" data-aos-delay={index * 150}>
                             <div className={styles.domainCard}>
                                 <div className={styles.iconBox}>
                                     {domain.icon}

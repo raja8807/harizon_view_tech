@@ -8,14 +8,14 @@ const BannerSection = () => {
     <div className={styles.BannerSection}>
       <CustomContainer>
         <div className={styles.cont}>
-          <h1>
+          <h1 data-aos="fade-up">
             MNC Project Enablement
             <br />& Vendor Consulting
           </h1>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="200">
             Building Businesses. Delivering Work. Creating Revenue Pipelines.
           </p>
-          {/* <div className={styles.bgImg}>
+          {/* <div className={styles.bgImg} data-aos="zoom-in" data-aos-delay="400">
             <Image src="/images/bg_img.png" />
           </div> */}
         </div>

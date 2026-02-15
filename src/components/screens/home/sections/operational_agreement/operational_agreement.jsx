@@ -33,7 +33,7 @@ const OperationalAgreement = () => {
                 </div>
 
                 <div className={styles.cont}>
-                    <div className={styles.pointsList}>
+                    <div className={styles.pointsList} data-aos="fade-right">
                         {points.map((point, index) => (
                             <div key={index} className={styles.pointItem}>
                                 <div className={styles.iconWrapper}>{point.icon}</div>
@@ -44,7 +44,7 @@ const OperationalAgreement = () => {
                             </div>
                         ))}
                     </div>
-                    <div className={styles.img}>
+                    <div className={styles.img} data-aos="fade-left">
                         <Image src="/images/agreement_img.jpg" alt="Operational Agreement" className={styles.mainImg} fluid />
                     </div>
                 </div>

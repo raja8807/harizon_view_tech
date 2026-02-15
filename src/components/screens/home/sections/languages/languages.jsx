@@ -26,7 +26,7 @@ const LanguageSupport = () => {
             <CustomContainer>
                 <div className={styles.langWrapper}>
                     {languages.map((lang, index) => (
-                        <div key={`lang_${index}`} className={styles.langItem}>
+                        <div key={`lang_${index}`} className={styles.langItem} data-aos="zoom-in" data-aos-delay={index * 150}>
                             <h3
                                 style={{ color: lang.color }}
                             >{lang.native}</h3>

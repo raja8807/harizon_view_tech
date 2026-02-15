@@ -9,7 +9,7 @@ const AboutSection = () => {
     <section className={styles.AboutSection}>
       <CustomContainer>
         <div className={styles.wrap}>
-          <div className={styles.left}>
+          <div className={styles.left} data-aos="fade-right">
             <div className={styles.top}>
               <h3>ABOUT US</h3>
               <h2>Building Sustainable Outsourcing Success</h2>
@@ -39,7 +39,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className={styles.right}></div>
+          <div className={styles.right} data-aos="fade-left"></div>
         </div>
       </CustomContainer>
     </section>

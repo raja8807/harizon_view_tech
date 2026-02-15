@@ -10,7 +10,7 @@ const ContactSection = () => {
         <section className={styles.ContactSection}>
             <CustomContainer>
                 <Row className="align-items-center">
-                    <Col lg={5} className="mb-5 mb-lg-0">
+                    <Col lg={5} className="mb-5 mb-lg-0" data-aos="fade-right">
                         <div className={styles.textArea}>
                             <h2>Still have questions?</h2>
                             <p>
@@ -24,7 +24,7 @@ const ContactSection = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={7}>
+                    <Col lg={7} data-aos="fade-left">
                         <div className={styles.formWrapper}>
                             <Form>
                                 <Row>

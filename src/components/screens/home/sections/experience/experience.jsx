@@ -31,14 +31,14 @@ const ExperienceScale = () => {
     return (
         <section className={styles.ExperienceScale}>
             <CustomContainer>
-                <div className={styles.heading}>
+                <div className={styles.heading} data-aos="fade-up">
                     <h2>Proven Scale & Experience</h2>
                     <p>Building a robust network of successful partners.</p>
                 </div>
 
                 <Row className="justify-content-center">
                     {stats.map((stat, index) => (
-                        <Col key={index} xs={12} sm={6} lg={3}>
+                        <Col key={index} xs={12} sm={6} lg={3} data-aos="flip-left" data-aos-delay={index * 150}>
                             <div className={styles.statCard}>
                                 <div className={styles.icon}>{stat.icon}</div>
                                 <div className={styles.content}>

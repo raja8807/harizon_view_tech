@@ -14,7 +14,7 @@ import Layout from "@/components/layout/layout";
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     Aos.init({
-      duration: 1500,
+      duration: 1000,
       once: false,
     });
   }, []);

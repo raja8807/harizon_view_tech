@@ -7,9 +7,9 @@ const SectionHeading = ({ title, head, caption, variant = 1, className }) => {
     <div className={`${styles.SectionHeading} ${styles[`v${variant}`]} ${className}`}>
       <CustomContainer>
         <div className={styles.wrap}>
-          <p className={styles.title}>{title}</p>
-          <h2>{head}</h2>
-          <p className={styles.caption}>{caption}</p>
+          <p className={styles.title} data-aos='zoom-in'>{title}</p>
+          <h2 data-aos='fade-up'>{head}</h2>
+          <p className={styles.caption} data-aos='zoom-in'>{caption}</p>
         </div>
       </CustomContainer>
     </div>

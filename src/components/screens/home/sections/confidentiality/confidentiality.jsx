@@ -7,7 +7,7 @@ const ClientConfidentiality = () => {
     return (
         <section className={styles.Confidentiality}>
             <CustomContainer>
-                <div className={styles.wrapper}>
+                <div className={styles.wrapper} data-aos="fade-up">
                     <ShieldLockFill className={styles.icon} />
                     <h2>Client Confidentiality & Compliance</h2>
                     <p>

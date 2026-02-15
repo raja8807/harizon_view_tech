@@ -20,7 +20,7 @@ const Commitment = () => {
             <CustomContainer>
                 <div className={styles.checklist}>
                     {commitments.map((text, index) => (
-                        <div key={index} className={styles.checkItem}>
+                        <div key={index} className={styles.checkItem} data-aos="zoom-in" data-aos-delay={index * 150}>
                             <CheckCircleFill />
                             <p>{text}</p>
                         </div>
