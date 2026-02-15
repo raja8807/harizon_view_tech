@@ -16,28 +16,21 @@ const Footer = () => {
       <CustomContainer>
         <div className={styles.top}>
           <Row>
-            <Col xs={12} md={6} lg={3}>
+            <Col xs={12} md={6} lg={4}>
               <div className={`${styles.footerSection} ${styles.brand}`}>
                 <h3>Logo</h3>
                 <br />
                 <SocialMedia />
               </div>
             </Col>
-            <Col xs={12} md={6} lg={3}>
+            <Col xs={12} md={6} lg={4}>
               <div className={`${styles.footerSection} ${styles.link}`}>
                 <Link href={"/"}>HOME</Link>
                 <Link href={"/"}>CONTACT US</Link>
               </div>
             </Col>
-            <Col xs={12} md={6} lg={3}>
-              <div className={`${styles.footerSection} ${styles.link}`}>
-                <Link href={"/"}>HOME</Link>
-                <Link href={"/"}>CONTACT US</Link>
-                <Link href={"/"}>HOME</Link>
-                <Link href={"/"}>CONTACT US</Link>
-              </div>
-            </Col>
-            <Col xs={12} md={6} lg={3}>
+
+            <Col xs={12} md={6} lg={4}>
               <div className={`${styles.footerSection} ${styles.contact}`}>
                 <div>
                   <GeoAltFill /> Patel Road, Perambur, Chennai 11

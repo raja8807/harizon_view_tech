@@ -12,7 +12,7 @@
     }
 
     &.link {
-      margin-left: 30px;
+
       a {
         display: block;
         margin-bottom: 12px;
@@ -26,13 +26,14 @@
     }
 
     &.contact {
-      > div {
+      >div {
         font-size: 16px;
         margin-bottom: 12px;
 
         svg {
           font-size: 20px;
           margin-right: 8px;
+
           path {
             color: $color_primary;
           }
@@ -43,6 +44,7 @@
 
   .bot {
     margin-top: 50px;
+
     p {
       color: red;
       text-align: center;

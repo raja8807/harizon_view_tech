@@ -25,3 +25,18 @@ const BannerSection = () => {
 };
 
 export default BannerSection;
+
+
+//  <CustomContainer>
+//         <div className={styles.cont}>
+//           <h1>
+//             Horizon View Tech
+//           </h1>
+//           <p>
+//             MNC Project Enablement & Vendor Consulting
+//           </p>
+//           {/* <div className={styles.bgImg}>
+//             <Image src="/images/bg_img.png" />
+//           </div> */}
+//         </div>
+//       </CustomContainer>

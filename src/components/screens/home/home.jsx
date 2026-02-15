@@ -7,8 +7,10 @@ import ToolsTraining from "./sections/tools_training/tools_training";
 import LanguageSupport from "./sections/languages/languages";
 import ExperienceScale from "./sections/experience/experience";
 import ClientConfidentiality from "./sections/confidentiality/confidentiality";
+import OperationalAgreement from "./sections/operational_agreement/operational_agreement";
 import Commitment from "./sections/commitment/commitment";
 import RoleGrowth from "./sections/role_growth/role_growth";
+import ContactSection from "./sections/contact/contact";
 
 export default function Home() {
   return (
@@ -21,8 +23,10 @@ export default function Home() {
       <LanguageSupport />
       <ExperienceScale />
       <ClientConfidentiality />
+      <OperationalAgreement />
       <Commitment />
       <RoleGrowth />
+      <ContactSection />
     </>
   );
 }

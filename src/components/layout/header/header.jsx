@@ -4,6 +4,7 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import CustomButton from "@/components/ui/custom_button/custom_button";
+import { Image } from "react-bootstrap";
 
 const Header = () => {
   const router = useRouter();
@@ -39,8 +40,8 @@ const Header = () => {
       <CustomContainer>
         <div className={styles.wrap}>
           <Link href="/">
-            <h3>HorizonView</h3>
-            {/* <Image src="/logo/logo.png" alt="logo" height={90} /> */}
+            {/* <h3>HorizonView</h3> */}
+            <Image src="/logo/logo.png" alt="logo" height={80} />
           </Link>
           <CustomButton>Contact Us</CustomButton>
         </div>

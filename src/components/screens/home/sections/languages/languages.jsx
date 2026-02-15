@@ -8,7 +8,8 @@ const LanguageSupport = () => {
         { en: "Tamil", native: "தமிழ்", color: "#C8102E" },      // Deep Red
         { en: "Telugu", native: "తెలుగు", color: "#1B5E20" },    // Rich Green
         { en: "Kannada", native: "ಕನ್ನಡ", color: "#0D47A1" },    // Royal Blue
-        { en: "Malayalam", native: "മലയാളം", color: "#4A148C" }  // Deep Purple
+        { en: "Malayalam", native: "മലയാളം", color: "#4A148C" },  // Deep Purple
+        { en: "Hindi", native: "हिन्दी", color: "#FF6F00" }      // Saffron Orange
     ];
 
 

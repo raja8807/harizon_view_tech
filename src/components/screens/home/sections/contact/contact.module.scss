@@ -1,0 +1,135 @@
+@import "@/styles/scss/variables";
+@import "@/styles/scss/mixins";
+@import "@/styles/scss/media_queries";
+
+.ContactSection {
+    padding: 100px 0;
+    background-color: black; // Deep dark background from design
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    // Optional subtle gradient effect for the background
+    background: radial-gradient(circle at 10% 20%, #111 0%, #000 90%);
+
+    .textArea {
+        position: relative;
+        z-index: 2;
+
+        h2 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        p {
+            color: #999;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 400px;
+            margin-bottom: 50px;
+        }
+
+        .graphicWrapper {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 20px;
+
+            .globeIcon {
+                font-size: 200px;
+                color: $color_primary;
+                opacity: 0.2;
+                transform: rotate(15deg);
+            }
+        }
+    }
+
+    .formWrapper {
+        background: transparent;
+        padding: 20px;
+
+        .inputField {
+            background-color: #1f1f1f; // Dark input background
+            border: 1px solid #333;
+            border-radius: 30px; // Rounded pills
+            color: white;
+            padding: 15px 25px;
+            font-size: 16px;
+            height: 60px;
+            width: 100%;
+
+            &::placeholder {
+                color: #777;
+            }
+
+            &:focus {
+                background-color: #252525;
+                border-color: $color_primary;
+                box-shadow: none;
+                outline: none;
+            }
+
+            &.textarea {
+                height: auto;
+                border-radius: 20px; // Slightly less rounded for textarea
+                resize: none;
+                padding-top: 20px;
+            }
+        }
+
+        .submitBtnWrapper {
+            margin-top: 10px;
+
+            .submitBtn {
+                background-color: #55acee; // Bright blue from design, or use $color_primary
+                color: white;
+                border: none;
+                padding: 15px 40px;
+                border-radius: 30px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 5px 20px rgba(#55acee, 0.4);
+                }
+            }
+        }
+    }
+
+    @include respond-below(lg) {
+        .textArea {
+            text-align: center;
+            margin-bottom: 50px;
+
+            p {
+                margin: 0 auto 40px;
+            }
+
+            .graphicWrapper {
+                justify-content: center;
+                padding-left: 0;
+
+                .globeIcon {
+                    font-size: 150px;
+                }
+            }
+        }
+    }
+
+    @include respond-below(md) {
+        padding: 60px 0;
+
+        .textArea {
+            h2 {
+                font-size: 42px;
+            }
+        }
+    }
+}

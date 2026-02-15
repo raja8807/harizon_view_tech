@@ -1,0 +1,276 @@
+.OperationalAgreement {
+    background-color: $color_grey_bg;
+    padding: 80px 0;
+
+    .head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+
+        h2 {
+            color: $color_black;
+            font-size: 48px;
+        }
+
+        p {
+            color: $color_text_grey;
+            font-size: 18px;
+        }
+    }
+
+    .cont {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        margin-top: 80px;
+
+        .pointsList {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .pointItem {
+                display: flex;
+                gap: 20px;
+
+                .iconWrapper {
+                    flex-shrink: 0;
+                    width: 60px;
+                    height: 60px;
+
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+                    font-size: 24px;
+                    transition: transform 0.3s ease;
+
+                    background-color: white;
+
+                    path {
+                        color: $color_primary;
+                    }
+                }
+
+                .textWrapper {
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                        color: $color_black;
+                        font-family: 'DM Sans', sans-serif;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: $color_text_grey;
+                        line-height: 1.6;
+                    }
+                }
+
+
+            }
+        }
+
+        .img {
+            img {
+                border-radius: 20px;
+                margin: 0 20px;
+            }
+        }
+    }
+
+    @include respond-below(md) {
+        .head {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .cont {
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            .img {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+// .OperationalAgreement {
+// padding: 100px 0;
+// background-color: $color_grey_bg;
+
+// // Override heading alignment for this section
+// .heading {
+//     padding: 0 0 40px 0;
+//     text-align: left;
+
+//     :global(.section-heading-wrap) {
+//         align-items: flex-start;
+
+//         h2 {
+//             margin: 0;
+//             max-width: 100%;
+//         }
+
+//         p {
+//             margin: 0;
+//             max-width: 100%;
+//         }
+//     }
+// }
+
+// .content {
+//     padding-right: 20px;
+// }
+
+// .pointsList {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 30px;
+
+//     .pointItem {
+//         display: flex;
+//         gap: 20px;
+
+//         .iconWrapper {
+//             flex-shrink: 0;
+//             width: 60px;
+//             height: 60px;
+//             background-color: white;
+//             border-radius: 50%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+//             color: $color_primary;
+//             font-size: 24px;
+//             transition: transform 0.3s ease;
+//         }
+
+//         .textWrapper {
+//             h4 {
+//                 font-size: 20px;
+//                 font-weight: 600;
+//                 margin-bottom: 8px;
+//                 color: $color_black;
+//                 font-family: 'DM Sans', sans-serif;
+//             }
+
+//             p {
+//                 font-size: 16px;
+//                 color: $color_text_grey;
+//                 line-height: 1.6;
+//             }
+//         }
+
+//         &:hover {
+//             .iconWrapper {
+//                 transform: scale(1.1);
+//                 background-color: $color_primary;
+//                 color: white;
+//             }
+//         }
+//     }
+// }
+
+// .imageWrapper {
+//     position: relative;
+//     padding-left: 20px;
+
+//     .mainImg {
+//         border-radius: 20px;
+//         // box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+//         width: 100%;
+//         height: auto;
+//         object-fit: cover;
+//         min-height: 400px;
+//         background-color: #eee; // Fallback
+//     }
+
+//     .highlightCard {
+//         position: absolute;
+//         top: 40px;
+//         left: -40px;
+//         background-color: $color_primary;
+//         color: white;
+//         padding: 30px 40px;
+//         border-radius: 16px;
+//         display: flex;
+//         align-items: center;
+//         gap: 30px;
+//         box-shadow: 0 10px 30px rgba($color_primary, 0.3);
+
+//         .statItem {
+//             h3 {
+//                 font-size: 32px;
+//                 font-weight: 700;
+//                 margin-bottom: 5px;
+//                 line-height: 1;
+//             }
+
+//             p {
+//                 font-size: 12px;
+//                 font-weight: 500;
+//                 text-transform: uppercase;
+//                 letter-spacing: 1px;
+//                 opacity: 0.9;
+//                 max-width: 100px;
+//             }
+//         }
+
+//         .divider {
+//             width: 1px;
+//             height: 50px;
+//             background-color: rgba(255, 255, 255, 0.3);
+//         }
+//     }
+// }
+
+// @include respond-below(lg) {
+//     .content {
+//         padding-right: 0;
+//     }
+
+//     .imageWrapper {
+//         padding-left: 0;
+//         margin-top: 60px;
+
+//         .highlightCard {
+//             left: 50%;
+//             transform: translateX(-50%);
+//             top: -40px;
+//             width: 90%;
+//             justify-content: space-around;
+//         }
+//     }
+// }
+
+// @include respond-below(md) {
+//     padding: 60px 0;
+
+//     .heading {
+//         padding-bottom: 20px;
+//     }
+
+//     .imageWrapper {
+//         .highlightCard {
+//             padding: 20px;
+//             gap: 15px;
+
+//             .statItem {
+//                 h3 {
+//                     font-size: 24px;
+//                 }
+
+//                 p {
+//                     font-size: 11px;
+//                 }
+//             }
+//         }
+//     }
+// }
+// }
