@@ -14,7 +14,7 @@ const ContactSection = () => {
                         <div className={styles.textArea}>
                             <h2>Still have questions?</h2>
                             <p>
-                                The fastest way to convert visitors into leads and sales on your website is with our expert guidance. That's why businesses choose us.
+                                The fastest way to convert visitors into leads and sales on your website is with our expert guidance. That&apos;s why businesses choose us.
                             </p>
 
                             <div className={styles.graphicWrapper}>

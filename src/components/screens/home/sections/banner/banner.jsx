@@ -9,15 +9,15 @@ const BannerSection = () => {
       <CustomContainer>
         <div className={styles.cont}>
           <h1>
-            Global Project Enablement
+            MNC Project Enablement
             <br />& Vendor Consulting
           </h1>
           <p>
             Building Businesses. Delivering Work. Creating Revenue Pipelines.
           </p>
-          <div className={styles.bgImg}>
+          {/* <div className={styles.bgImg}>
             <Image src="/images/bg_img.png" />
-          </div>
+          </div> */}
         </div>
       </CustomContainer>
     </div>

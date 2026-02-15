@@ -46,7 +46,7 @@ const Footer = () => {
           </Row>
         </div>
         <div className={styles.bot}>
-          <p>© Nexus. All Rights Reserved. Licensing</p>
+          <p>© Nexus7. All Rights Reserved. Licensing</p>
         </div>
       </CustomContainer>
     </footer>
