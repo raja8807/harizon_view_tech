@@ -9,11 +9,12 @@ const BannerSection = () => {
       <CustomContainer>
         <div className={styles.cont}>
           <h1>
-            Landing Page
-            <br />
-            Webflow Template
+            Global Project Enablement
+            <br />& Vendor Consulting
           </h1>
-          <p>5 Landing Pages. 16 Inner Pages.</p>
+          <p>
+            Building Businesses. Delivering Work. Creating Revenue Pipelines.
+          </p>
           <div className={styles.bgImg}>
             <Image src="/images/bg_img.png" />
           </div>
