@@ -1,8 +1,15 @@
 .main {
   background-color: #151515;
+
   * {
     color: white;
   }
+
+  section {
+    max-width: 100dvw;
+    overflow: hidden;
+  }
+
   // * {
   //   &::-webkit-scrollbar {
   //     width: 5px !important;
