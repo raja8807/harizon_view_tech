@@ -4,9 +4,9 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
-      
+
       <Head />
-      <title>Master Cctv</title>
+      <title>Harizon View Tech</title>
       <body >
         <Main />
         <NextScript />
