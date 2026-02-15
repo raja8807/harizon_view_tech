@@ -1,0 +1,16 @@
+.Header {
+  // border-bottom: 1px solid rgba(230, 234, 239, 0.15);
+
+  width: 100dvw;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .wrap {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
