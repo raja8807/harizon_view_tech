@@ -22,6 +22,8 @@
       &.title {
         font-size: 20px;
         color: $color_primary;
+        text-transform: uppercase;
+        font-weight: 600;
       }
 
       &.caption {
@@ -33,6 +35,7 @@
 
   &.v2 {
     background-color: white;
+
     .wrap {
       h2 {
         color: $color_black;

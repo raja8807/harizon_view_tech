@@ -1,0 +1,138 @@
+@import "@/styles/scss/variables";
+@import "@/styles/scss/mixins";
+@import "@/styles/scss/media_queries";
+
+.ProjectDomains {
+    padding-bottom: 50px;
+    background-color: white;
+
+    background-image: url('/images/bg-vector.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .domainCard {
+        background-color: #111111; // Dark background from design
+        border-radius: 20px;
+        padding: 50px 40px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+
+        // Decorative wave effect (simulated with gradient)
+        &::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba($color_primary, 0.2) 0%, rgba($color_primary, 0) 70%);
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+
+            &::before {
+                opacity: 0.8;
+                transform: scale(1.1);
+                transition: all 0.5s ease;
+            }
+        }
+
+        .iconBox {
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+
+            svg {
+                font-size: 28px;
+
+                path {
+                    color: black;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            font-family: 'DM Sans', sans-serif; // Assuming generic sans-serif or project font
+        }
+
+        .listContainer {
+            flex-grow: 1;
+            position: relative;
+            z-index: 1;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    color: #999;
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                    line-height: 1.6;
+                    transition: color 0.3s;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .actionLink {
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+
+            a {
+                color: $color_primary;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+
+                &:hover {
+                    color: lighten($color_primary, 10%);
+                }
+            }
+        }
+    }
+
+    @include respond-below(md) {
+        padding: 60px 0;
+
+        .domainCard {
+            padding: 30px;
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+}

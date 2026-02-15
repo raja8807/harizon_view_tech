@@ -1,0 +1,149 @@
+@import "@/styles/scss/variables";
+@import "@/styles/scss/mixins";
+@import "@/styles/scss/media_queries";
+
+.ToolsTraining {
+    padding: 100px 0;
+    // Dark background similar to the design
+    background-color: #0f1012;
+
+    .darkHeading {
+        h2 {
+            color: white !important;
+        }
+
+        // Target the caption (p after h2) to keep the title (first p) color intact
+        h2~p {
+            color: #8b8b8b !important;
+        }
+    }
+
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 40px; // Row gap, Column gap
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .toolCard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .iconBox {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 24px;
+
+            // Color variations matching the design vibe (light pastel bg + dark icon)
+            &.color0 {
+                background-color: #d1f7c4; // Light Green
+                color: #2e7d32;
+            }
+
+            &.color1 {
+                background-color: #c4e9f7; // Light Blue
+                color: #0277bd;
+            }
+
+            &.color2 {
+                background-color: #ffe0b2; // Light Orange
+                color: #ef6c00;
+            }
+
+            svg {
+                width: 28px;
+                height: 28px;
+
+                path {
+                    color: $color_primary;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 12px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #9aa0a6; // Muted grey
+            margin: 0;
+        }
+    }
+
+    .trainingFooter {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 40px;
+        text-align: center;
+
+        p {
+            color: #8b8b8b;
+            font-size: 16px;
+            // display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            br {
+                margin: 10px 0;
+                display: none;
+            }
+
+            svg {
+                color: $color_primary;
+                font-size: 18px;
+            }
+
+            span {
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
+
+    @include respond-below(md) {
+        .gridWrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 20px;
+        }
+    }
+
+    @include respond-below(sm) {
+        padding: 60px 0;
+
+        .gridWrapper {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .toolCard {
+            align-items: center;
+            text-align: center;
+        }
+
+        .trainingFooter {
+            p {
+                br {
+                    display: block;
+                }
+            }
+        }
+    }
+}
