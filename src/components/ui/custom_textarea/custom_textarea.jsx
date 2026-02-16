@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./cuatom_input.module.scss";
+import styles from "./custom_textarea.module.scss";
 
-const CustomInput = ({
+const CustomTextArea = ({
   placeHolder,
   value,
   variant = 1,
@@ -15,18 +15,19 @@ const CustomInput = ({
   ...props
 }) => {
   return (
-    <input
+    <textarea
       onChange={(e) => {
         onChange(e, e.target.value);
       }}
+      rows={4}
+      className={styles.CustomTextArea}
       value={value}
       placeholder={placeHolder || label}
       type={type}
       required={required}
       {...props}
-      className={styles.CustomInput}
     />
   );
 };
 
-export default CustomInput;
+export default CustomTextArea;

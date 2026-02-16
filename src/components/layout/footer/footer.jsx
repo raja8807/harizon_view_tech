@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
-import { Col, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import SocialMedia from "@/components/common/social_media/social_media";
 import Link from "next/link";
 import {
@@ -9,6 +9,7 @@ import {
   GeoAltFill,
   TelephoneFill,
 } from "react-bootstrap-icons";
+import { CONATCT_DETAILS } from "@/constants/constants";
 
 const Footer = () => {
   return (
@@ -18,7 +19,8 @@ const Footer = () => {
           <Row>
             <Col xs={12} md={6} lg={4}>
               <div className={`${styles.footerSection} ${styles.brand}`}>
-                <h3>Logo</h3>
+                <Image src="/logo/logo.png" width={200} alt="logo" />
+                <br />
                 <br />
                 <SocialMedia />
               </div>
@@ -26,20 +28,23 @@ const Footer = () => {
             <Col xs={12} md={6} lg={4}>
               <div className={`${styles.footerSection} ${styles.link}`}>
                 <Link href={"/"}>HOME</Link>
-                <Link href={"/"}>CONTACT US</Link>
+                <Link href={"/contact"}>CONTACT US</Link>
               </div>
             </Col>
 
             <Col xs={12} md={6} lg={4}>
               <div className={`${styles.footerSection} ${styles.contact}`}>
                 <div>
-                  <GeoAltFill /> Patel Road, Perambur, Chennai 11
+                  <GeoAltFill /> {CONATCT_DETAILS.address}
                 </div>
-                <div>
+                {/* <div>
                   <TelephoneFill /> 9500023724 / 9710649567
-                </div>
+                </div> */}
                 <div>
-                  <EnvelopeAtFill /> admin@Horizonviewtech.in
+                  <EnvelopeAtFill />{" "}
+                  <Link href={`mailto:${CONATCT_DETAILS.email}`}>
+                    {CONATCT_DETAILS.email}
+                  </Link>
                 </div>
               </div>
             </Col>

@@ -1,12 +1,13 @@
-.BannerSection {
+.ContactBanner {
   width: 100dvw;
-  height: 100dvh;
   background-image: url("/images/bg-vector.webp");
-  background-position: center -90px;
+  background-position: center;
 
   .cont {
-    padding-top: 80px;
     text-align: center;
+    height: 70dvh;
+    @include flexCenter;
+    flex-direction: column;
 
     h1 {
       font-size: 86px;
@@ -35,9 +36,8 @@
       padding-top: 40px;
 
       h1 {
-        font-size: 42px;
+        font-size: 50px;
         max-width: 280px;
-        margin: auto;
       }
     }
   }

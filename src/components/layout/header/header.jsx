@@ -39,11 +39,12 @@ const Header = () => {
     <header className={styles.Header}>
       <CustomContainer>
         <div className={styles.wrap}>
-          <Link href="/">
-            {/* <h3>HorizonView</h3> */}
+          <Link href="/" data-aos="fade-right">
             <Image src="/logo/logo.png" alt="logo" height={80} />
           </Link>
-          <CustomButton>Contact Us</CustomButton>
+          <div data-aos="fade-left">
+            <CustomButton href={"/contact"}>Contact Us</CustomButton>
+          </div>
         </div>
       </CustomContainer>
     </header>

@@ -1,12 +1,14 @@
-.CustomInput {
+.CustomTextArea {
   border: 1px solid #afafaf80;
   background-color: white;
-  border-radius: 50px;
+  color: $color_primary;
+  border-radius: 24px;
   height: auto;
   margin-bottom: 0;
   padding: 16px 18px;
   font-size: 16px;
   color: $color_black;
+
   outline: none;
 
   &:active,

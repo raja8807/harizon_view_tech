@@ -9,11 +9,13 @@ const AboutSection = () => {
     <section className={styles.AboutSection}>
       <CustomContainer>
         <div className={styles.wrap}>
-          <div className={styles.left} data-aos="fade-right">
+          <div className={styles.left}>
             <div className={styles.top}>
-              <h3>ABOUT US</h3>
-              <h2>Building Sustainable Outsourcing Success</h2>
-              <p>
+              <h3 data-aos="fade-right">ABOUT US</h3>
+              <h2 data-aos="fade-right" data-aos-delay="100">
+                Building Sustainable Outsourcing Success
+              </h2>
+              <p data-aos="fade-right" data-aos-delay="200">
                 For over 17+ years, we have specialized in enabling individuals,
                 startups, and companies to enter the global outsourcing
                 ecosystem.
@@ -23,9 +25,9 @@ const AboutSection = () => {
                 income-generating operations.
               </p>
             </div>
-            <hr />
+            <hr data-aos="fade-right" />
 
-            <div className={styles.bot}>
+            <div className={styles.bot} data-aos="fade-up">
               <div>
                 <div>
                   <h4>Not just training.</h4>
