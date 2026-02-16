@@ -21,12 +21,10 @@ const ContactFormSection = () => {
             <div className={styles.head}>
               <h4 data-aos="fade-right">GET IN TOUCH</h4>
               <h2 data-aos="fade-right" data-aos-delay="200">
-                Chat with our support team to learn more
+                Speak with our ODC Strategy Experts
               </h2>
               <p data-aos="fade-right" data-aos-delay="400">
-                We provide professional services to clients in a particular area
-                of expertise. We have a team of experts in various fields who
-                can offer advice on a project or problem.
+                Our experts are ready to guide you through MNC project enablement, vendor selection, and establishing your dedicated offshore teams.
               </p>
             </div>
 
@@ -52,7 +50,7 @@ const ContactFormSection = () => {
 
           <div className={styles.right}>
             <form onSubmit={handleSubmit} data-aos="fade-left">
-              <h2>Send us a message</h2>
+              <h2>Request a Consultation</h2>
               <CustomInput placeHolder={"Your Name"} />
               <CustomInput placeHolder={"Your Email"} />
               <CustomInput placeHolder={"Your Phone Number"} />

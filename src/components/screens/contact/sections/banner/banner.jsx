@@ -9,8 +9,7 @@ const ContactBanner = () => {
         <div className={styles.cont}>
           <h1 data-aos="zoom-in">Contact Us</h1>
           <p data-aos="fade-up">
-            We&apos;re proud to be working with these incredible companies, and
-            thankful for their feedback, suggestions, and support.
+            Partner with HarizonViewTech to scale your engineering capabilities. Let&apos;s build your strategic roadmap today.
           </p>
         </div>
       </CustomContainer>

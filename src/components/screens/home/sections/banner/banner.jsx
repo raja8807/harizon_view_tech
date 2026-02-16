@@ -10,10 +10,10 @@ const BannerSection = () => {
         <div className={styles.cont}>
           <h1 data-aos="fade-up">
             MNC Project Enablement
-            <br />& Vendor Consulting
+            <br />& Strategic IT Outsourcing
           </h1>
           <p data-aos="fade-up" data-aos-delay="200">
-            Building Businesses. Delivering Work. Creating Revenue Pipelines.
+            Building Scalable ODCs. Delivering Enterprise Excellence. Creating Revenue Pipelines.
           </p>
           {/* <div className={styles.bgImg} data-aos="zoom-in" data-aos-delay="400">
             <Image src="/images/bg_img.png" />

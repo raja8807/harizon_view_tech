@@ -13,7 +13,7 @@ const AboutSection = () => {
             <div className={styles.top}>
               <h3 data-aos="fade-right">ABOUT US</h3>
               <h2 data-aos="fade-right" data-aos-delay="100">
-                Building Sustainable Outsourcing Success
+                Building Sustainable Global Outsourcing Success
               </h2>
               <p data-aos="fade-right" data-aos-delay="200">
                 For over 17+ years, we have specialized in enabling individuals,
@@ -21,8 +21,8 @@ const AboutSection = () => {
                 ecosystem.
                 <br />
                 We function as a professional consulting bridge between MNC
-                clients and execution vendors, transforming infrastructure into
-                income-generating operations.
+                clients and strategic execution partners, transforming infrastructure into
+                high-value global operations.
               </p>
             </div>
             <hr data-aos="fade-right" />

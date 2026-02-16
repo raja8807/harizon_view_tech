@@ -8,7 +8,7 @@ import { CheckCircle, CheckCircleFill } from "react-bootstrap-icons";
 const ServicesSection = () => {
   const services = [
     {
-      head: "Business Setup Support",
+      head: "ODC Infrastructure & Setup",
       points: [
         "Workflow planning",
         "Team structure guidance",
@@ -18,7 +18,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      head: "Project Enablement",
+      head: "Strategic Project Enablement",
       points: [
         "Live project allocation",
         "Client requirement mapping",
@@ -27,7 +27,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      head: "Operational Stability",
+      head: "Vendor Management & Stability",
       points: [
         "Billing guidance",
         "Volume management support up to 1 year",
@@ -42,7 +42,7 @@ const ServicesSection = () => {
       <SectionHeading
         head={"Our Core Services"}
         caption={
-          "We provide end-to-end operational support so vendors can begin work immediately and sustain long-term productivity."
+          "We provide end-to-end operational support to setup, scale, and manage high-performance offshore development centers."
         }
       />
       <CustomContainer>
